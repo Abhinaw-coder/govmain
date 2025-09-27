@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Activity, TrendingUp, AlertTriangle, Shield, Heart, BarChart3, RefreshCw, Download, Filter, Calendar, MapPin, Zap, Target, Brain, Layers, Globe, Microscope } from 'lucide-react';
+import { Activity, TrendingUp, TriangleAlert as AlertTriangle, Shield, Heart, ChartBar as BarChart3, RefreshCw, Download, ListFilter as Filter, Calendar, MapPin, Zap, Target, Brain, Layers, Globe, Microscope } from 'lucide-react';
 import InteractivePieChart from '../Charts/InteractivePieChart';
 import MetricCard from './MetricCard';
 import ChartContainer from '../Charts/ChartContainer';
