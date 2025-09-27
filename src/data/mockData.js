@@ -215,6 +215,125 @@ export const recentActivities = [
   }
 ];
 
+// Disease Analytics Data
+export const nationalRiskLevels = [
+  { name: 'Low Risk', value: 6500, color: '#22c55e' },
+  { name: 'Medium Risk', value: 3200, color: '#eab308' },
+  { name: 'High Risk', value: 1800, color: '#f97316' },
+  { name: 'Critical Risk', value: 958, color: '#ef4444' }
+];
+
+export const diseaseDistribution = [
+  { name: 'Foot and Mouth Disease', value: 3500, cases: 3500, deaths: 245 },
+  { name: 'Avian Influenza', value: 2800, cases: 2800, deaths: 420 },
+  { name: 'Brucellosis', value: 2200, cases: 2200, deaths: 88 },
+  { name: 'Tuberculosis', value: 1900, cases: 1900, deaths: 152 },
+  { name: 'Anthrax', value: 1200, cases: 1200, deaths: 180 },
+  { name: 'Other Diseases', value: 858, cases: 858, deaths: 65 }
+];
+
+export const mortalityByDisease = [
+  { name: 'Avian Influenza', value: 420, mortalityRate: '15.0' },
+  { name: 'Foot and Mouth Disease', value: 245, mortalityRate: '7.0' },
+  { name: 'Anthrax', value: 180, mortalityRate: '15.0' },
+  { name: 'Tuberculosis', value: 152, mortalityRate: '8.0' },
+  { name: 'Brucellosis', value: 88, mortalityRate: '4.0' },
+  { name: 'Other Diseases', value: 65, mortalityRate: '7.6' }
+];
+
+export const animalHealthStatus = [
+  { name: 'Healthy Animals', value: 1250000, color: '#22c55e' },
+  { name: 'Affected Animals', value: 12458, color: '#ef4444' }
+];
+
+export const vaccinationCoverage = [
+  { name: 'Vaccinated', value: 982000, color: '#22c55e' },
+  { name: 'Unvaccinated', value: 280458, color: '#ef4444' }
+];
+
+export const regionalAnalysis = [
+  {
+    region: 'Northern Region',
+    totalFarms: 2847,
+    totalAnimals: 285600,
+    vaccinationRate: '88.5',
+    mortalityRate: '2.3',
+    avgRiskScore: '2.1',
+    affectionRate: '4.2'
+  },
+  {
+    region: 'Southern Region',
+    totalFarms: 1923,
+    totalAnimals: 198400,
+    vaccinationRate: '92.1',
+    mortalityRate: '1.8',
+    avgRiskScore: '1.8',
+    affectionRate: '3.1'
+  },
+  {
+    region: 'Eastern Region',
+    totalFarms: 3156,
+    totalAnimals: 324800,
+    vaccinationRate: '79.3',
+    mortalityRate: '3.2',
+    avgRiskScore: '2.8',
+    affectionRate: '5.8'
+  },
+  {
+    region: 'Western Region',
+    totalFarms: 2234,
+    totalAnimals: 245600,
+    vaccinationRate: '85.7',
+    mortalityRate: '2.1',
+    avgRiskScore: '2.3',
+    affectionRate: '3.9'
+  },
+  {
+    region: 'Central Region',
+    totalFarms: 2298,
+    totalAnimals: 208058,
+    vaccinationRate: '90.2',
+    mortalityRate: '1.9',
+    avgRiskScore: '1.9',
+    affectionRate: '3.4'
+  }
+];
+
+export const timeSeriesData = [
+  { month: 'Jan', newCases: 450, deaths: 32, vaccinations: 15000, farms: 125 },
+  { month: 'Feb', newCases: 520, deaths: 38, vaccinations: 18000, farms: 142 },
+  { month: 'Mar', newCases: 380, deaths: 28, vaccinations: 22000, farms: 98 },
+  { month: 'Apr', newCases: 610, deaths: 45, vaccinations: 25000, farms: 165 },
+  { month: 'May', newCases: 490, deaths: 35, vaccinations: 28000, farms: 134 },
+  { month: 'Jun', newCases: 430, deaths: 31, vaccinations: 32000, farms: 118 },
+  { month: 'Jul', newCases: 380, deaths: 27, vaccinations: 35000, farms: 102 },
+  { month: 'Aug', newCases: 520, deaths: 39, vaccinations: 38000, farms: 145 },
+  { month: 'Sep', newCases: 460, deaths: 33, vaccinations: 41000, farms: 128 },
+  { month: 'Oct', newCases: 390, deaths: 29, vaccinations: 44000, farms: 108 },
+  { month: 'Nov', newCases: 340, deaths: 25, vaccinations: 47000, farms: 95 },
+  { month: 'Dec', newCases: 310, deaths: 22, vaccinations: 50000, farms: 87 }
+];
+
+export const diseaseSeverityMatrix = [
+  { name: 'Foot and Mouth Disease', cases: 3500, deaths: 245, mortalityRate: '7.0', prevalence: '28.1' },
+  { name: 'Avian Influenza', cases: 2800, deaths: 420, mortalityRate: '15.0', prevalence: '22.5' },
+  { name: 'Brucellosis', cases: 2200, deaths: 88, mortalityRate: '4.0', prevalence: '17.7' },
+  { name: 'Tuberculosis', cases: 1900, deaths: 152, mortalityRate: '8.0', prevalence: '15.3' },
+  { name: 'Anthrax', cases: 1200, deaths: 180, mortalityRate: '15.0', prevalence: '9.6' },
+  { name: 'Newcastle Disease', cases: 950, deaths: 95, mortalityRate: '10.0', prevalence: '7.6' },
+  { name: 'Lumpy Skin Disease', cases: 750, deaths: 38, mortalityRate: '5.1', prevalence: '6.0' },
+  { name: 'Classical Swine Fever', cases: 580, deaths: 87, mortalityRate: '15.0', prevalence: '4.7' }
+];
+
+export const riskMetrics = {
+  totalFarms: 12458,
+  totalAnimals: 1262458,
+  totalDeaths: 1150,
+  overallMortalityRate: 8.2,
+  overallVaccinationRate: 77.8,
+  overallMorbidityRate: 12.4,
+  averageAnimalsPerFarm: 101
+};
 export const mapData = {
   regions: [
     {

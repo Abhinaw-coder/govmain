@@ -71,19 +71,6 @@ const Communications = () => (
   </div>
 );
 
-const PlaceholderComponent = ({ title, description }) => (
-  <div className="space-y-6 animate-fade-in">
-    <div className="text-center py-12">
-      <h2 className="text-2xl font-bold text-secondary-900 mb-4">{title}</h2>
-      <p className="text-secondary-600 mb-8">{description}</p>
-      <div className="card max-w-md mx-auto text-center">
-        <h3 className="font-semibold text-secondary-900 mb-2">Coming Soon</h3>
-        <p className="text-sm text-secondary-600">This feature is under development</p>
-      </div>
-    </div>
-  </div>
-);
-
 function App() {
   const [activeTab, setActiveTab] = useState('dashboard');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -111,25 +98,57 @@ function App() {
       case 'communications':
         return <Communications />;
       case 'biosecurity':
-        return <PlaceholderComponent 
-          title="Biosecurity Management" 
-          description="Monitor and manage biosecurity protocols and compliance" 
-        />;
+        return (
+          <div className="space-y-6 animate-fade-in">
+            <div className="text-center py-12">
+              <h2 className="text-2xl font-bold text-secondary-900 mb-4">Biosecurity Management</h2>
+              <p className="text-secondary-600 mb-8">Monitor and manage biosecurity protocols and compliance</p>
+              <div className="card max-w-md mx-auto text-center">
+                <h3 className="font-semibold text-secondary-900 mb-2">Coming Soon</h3>
+                <p className="text-sm text-secondary-600">This feature is under development</p>
+              </div>
+            </div>
+          </div>
+        );
       case 'reports':
-        return <PlaceholderComponent 
-          title="Reports & Analytics" 
-          description="Generate comprehensive reports and analytics" 
-        />;
+        return (
+          <div className="space-y-6 animate-fade-in">
+            <div className="text-center py-12">
+              <h2 className="text-2xl font-bold text-secondary-900 mb-4">Reports & Analytics</h2>
+              <p className="text-secondary-600 mb-8">Generate comprehensive reports and analytics</p>
+              <div className="card max-w-md mx-auto text-center">
+                <h3 className="font-semibold text-secondary-900 mb-2">Coming Soon</h3>
+                <p className="text-sm text-secondary-600">This feature is under development</p>
+              </div>
+            </div>
+          </div>
+        );
       case 'calendar':
-        return <PlaceholderComponent 
-          title="Calendar & Scheduling" 
-          description="Manage events, schedules, and appointments" 
-        />;
+        return (
+          <div className="space-y-6 animate-fade-in">
+            <div className="text-center py-12">
+              <h2 className="text-2xl font-bold text-secondary-900 mb-4">Calendar & Scheduling</h2>
+              <p className="text-secondary-600 mb-8">Manage events, schedules, and appointments</p>
+              <div className="card max-w-md mx-auto text-center">
+                <h3 className="font-semibold text-secondary-900 mb-2">Coming Soon</h3>
+                <p className="text-sm text-secondary-600">This feature is under development</p>
+              </div>
+            </div>
+          </div>
+        );
       case 'data-management':
-        return <PlaceholderComponent 
-          title="Data Management" 
-          description="Manage and organize system data" 
-        />;
+        return (
+          <div className="space-y-6 animate-fade-in">
+            <div className="text-center py-12">
+              <h2 className="text-2xl font-bold text-secondary-900 mb-4">Data Management</h2>
+              <p className="text-secondary-600 mb-8">Manage and organize system data</p>
+              <div className="card max-w-md mx-auto text-center">
+                <h3 className="font-semibold text-secondary-900 mb-2">Coming Soon</h3>
+                <p className="text-sm text-secondary-600">This feature is under development</p>
+              </div>
+            </div>
+          </div>
+        );
       default:
         return <Dashboard />;
     }
