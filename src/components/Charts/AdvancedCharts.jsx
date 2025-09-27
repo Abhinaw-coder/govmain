@@ -5,7 +5,7 @@ import {
   PolarAngleAxis, PolarRadiusAxis, Radar, ComposedChart, Legend,
   Treemap, Cell, FunnelChart, Funnel, LabelList
 } from 'recharts';
-import { TrendingUp, Activity, TriangleAlert as AlertTriangle, Shield } from 'lucide-react';
+import { TrendingUp, Activity, AlertTriangle, Shield } from 'lucide-react';
 
 // Advanced Scatter Plot for Disease Severity Analysis
 export const DiseaseSeverityScatter = ({ data, loading = false }) => {
